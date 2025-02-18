@@ -1,34 +1,36 @@
 name: Auto Release
 on:
-  workflow_call:
-    inputs:
-      debug:
-        type: boolean
-        default: false
-      dry-run:
-        type: boolean
-        default: false
-    secrets:
-      # populated automatically
-      # GITHUB_TOKEN:
-      #   required: true
-      NPM_TOKEN:
-        required: true
+  push:
+    branches:
+      - master # or main
+
+permissions:
+  contents: read # for checkout
 
 jobs:
   release:
-    name: Run release
+    name: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref }}
-      - uses: actions/setup-node@v4
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: lts/*
-          cache: "npm"
-      - run: npm ci --ignore-scripts ${{ inputs.dry-run }}
-      - env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          node-version: "lts/*"
+      - name: Install dependencies
+        run: npm clean-install
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release --debug ${{ inputs.debug }} --dry-run ${{ inputs.dry-run }}
+        run: npx semantic-release
