@@ -1,0 +1,10 @@
+{
+  "drips": {
+    "ethereum": {
+      "ownedBy": "0x0"
+    },
+    "starknet": {
+      "ownedBy": "0x0"
+    }
+  }
+}

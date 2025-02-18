@@ -1,0 +1,28 @@
+{
+  "name": "rosettanetjs",
+  "version": "0.0.1",
+  "description": "Javascript library for using Rosettanet",
+  "main": "index.js",
+  "keywords": [
+    "rosettanet",
+    "javascript",
+    "library",
+    "starknet",
+    "web3",
+    "etherjs",
+    "wagmi",
+    "starknetjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digine-Labs/rosettanetjs.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Digine-Labs",
+  "license": "MIT",
+  "dependencies": {
+    "semantic-release": "^24.2.3"
+  }
+}
