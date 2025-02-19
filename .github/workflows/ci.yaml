@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
-      - run: npm run install
+      - run: npm install
       - run: npm run lint
       - run: npm run format
       - run: npm run test
@@ -29,5 +29,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
-      - run: npm run install
+      - run: npm install
       - run: npm run build
