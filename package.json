@@ -8,6 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/Digine-Labs/rosettanetjs.git"
   },
+  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -27,7 +28,7 @@
     "build:esm": "tsup --clean false --format esm --platform node",
     "build:iife": "tsup --clean false --format iife --platform browser",
     "build:dts": "tsup --clean false --dts-only",
-    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint": "eslint",
     "format": "prettier --write 'src/**/*.{ts,tsx,json,md}'",
     "test": "jest"
   },
