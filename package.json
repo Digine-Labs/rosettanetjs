@@ -22,8 +22,12 @@
       "require": "./dist/index.js"
     }
   },
+  "files": [
+    "CHANGELOG.md",
+    "dist"
+  ],
   "scripts": {
-    "prepare": "husky",
+    "prepare": "npm run build && husky",
     "build": "tsup && npm run build:esm && npm run build:iife && npm run build:dts",
     "build:esm": "tsup --clean false --format esm --platform node",
     "build:iife": "tsup --clean false --format iife --platform browser",
