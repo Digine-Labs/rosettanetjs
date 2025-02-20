@@ -4,6 +4,9 @@ import tsParser from '@typescript-eslint/parser';
 
 export default [
   {
+    ignores: ['dist', 'node_modules', 'tsup.config.ts', 'eslint.config.js'],
+  },
+  {
     files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
       parser: tsParser,
@@ -21,7 +24,6 @@ export default [
       ...typescript.configs.recommended.rules,
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     },
-    ignores: ['tsup.config.ts', 'eslint.config.js', 'dist', 'node_modules'],
   },
   {
     files: ['**/*.js', '**/*.jsx'],
@@ -32,6 +34,5 @@ export default [
     rules: {
       ...js.configs.recommended.rules,
     },
-    ignores: ['tsup.config.ts', 'eslint.config.js', 'dist', 'node_modules'],
   },
 ];
