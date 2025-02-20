@@ -13,8 +13,9 @@
   </a>
   <a href="https://github.com/Digine-Labs/rosettanetjs/stargazers">
     <img src='https://img.shields.io/github/stars/Digine-Labs/rosettanetjs?color=yellow&style=for-the-badge' />
-  </a>
+  <a href="https://github.com/Digine-Labs">
   <img src="https://img.shields.io/badge/powered_by-Digine_Labs-navy?style=for-the-badge&labelColor=%23231F20&color=%234D2DB4">
+  </a>
   <a href="https://x.com/rosettanetstark">
     <img src="https://img.shields.io/badge/follow_us-Twitter-blue?style=for-the-badge">
   </a>
