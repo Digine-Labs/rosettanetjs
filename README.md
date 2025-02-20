@@ -1,3 +1,23 @@
+<!-- primary badges -->
+<p align="center">
+  <a href="https://www.npmjs.com/package/rosettanet">
+    <img src='https://img.shields.io/npm/v/rosettanet' />
+  </a>
+  <a href="https://www.npmjs.com/package/rosettanet">
+    <img src='https://img.shields.io/npm/d18m/rosettanet.svg?color=blueviolet' />
+  </a>
+  <a href="https://github.com/Digine-Labs/rosettanetjs/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-black">
+  </a>
+  <a href="https://github.com/Digine-Labs/rosettanetjs/stargazers">
+    <img src='https://img.shields.io/github/stars/Digine-Labs/rosettanetjs?color=yellow' />
+  </a>
+  <img src="https://img.shields.io/badge/powered_by-Digine_Labs-navy?style=for-the-badge&labelColor=%23231F20&color=%234D2DB4">
+  <a href="https://x.com/rosettanetstark">
+    <img src="https://img.shields.io/badge/follow_us-Twitter-blue">
+  </a>
+</p>
+
 # RosettaNetJS
 
 RosettaNetJS is a JavaScript library designed to interact with [RosettaNet](https://github.com/Digine-Labs/rosettanet), a middleware that bridges Ethereum and StarkNet. It simplifies the integration of **StarkNetJS** with account types and utility functions.
@@ -24,7 +44,9 @@ or
 pnpm add rosettanet
 ```
 
-## 🛠 Usage
+## 🌐 Documentation
+
+How to [Guides](https://docs.rosettanet.io/) :book:
 
 ## 🔗 Related Projects
 
