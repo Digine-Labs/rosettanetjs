@@ -1,6 +1,6 @@
 {
-  "name": "rosettanetjs",
-  "version": "1.0.0",
+  "name": "rosettanet",
+  "version": "0.0.0",
   "author": "Digine-Labs",
   "license": "MIT",
   "description": "Javascript library for using Rosettanet",
@@ -36,7 +36,20 @@
     "format": "prettier --write 'src/**/*.{ts,tsx,json,md}'",
     "test": "jest"
   },
-  "dependencies": {
+  "dependencies": {},
+  "keywords": [
+    "rosettanet",
+    "javascript",
+    "library",
+    "starknet",
+    "web3",
+    "etherjs",
+    "wagmi",
+    "starknetjs"
+  ],
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "ts-jest": "^29.2.5",
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
     "@semantic-release/changelog": "^6.0.3",
@@ -54,19 +67,5 @@
     "prettier": "^3.5.1",
     "semantic-release": "^24.2.3",
     "tsup": "^8.3.6"
-  },
-  "keywords": [
-    "rosettanet",
-    "javascript",
-    "library",
-    "starknet",
-    "web3",
-    "etherjs",
-    "wagmi",
-    "starknetjs"
-  ],
-  "devDependencies": {
-    "@jest/globals": "^29.7.0",
-    "ts-jest": "^29.2.5"
   }
 }
