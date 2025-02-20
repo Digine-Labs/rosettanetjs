@@ -40,6 +40,7 @@
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
     "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "github:semantic-release/exec",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^11.0.1",
     "@semantic-release/npm": "^12.0.1",
