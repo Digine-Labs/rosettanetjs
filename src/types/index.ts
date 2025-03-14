@@ -39,3 +39,9 @@ export interface EncodableTuple {
 }
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface EncodableArray extends ReadonlyArray<Encodable> {}
+
+export interface Call {
+  entry_point: string;
+  contract_address: string;
+  calldata: string[]
+}
