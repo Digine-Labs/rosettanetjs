@@ -1,11 +1,12 @@
-import { defineConfig } from "tsup";
+import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ["src/index.ts"], // Entry point
-  format: ["esm", "cjs"], // Output formats
-  dts: true, // Generate TypeScript declarations
-  sourcemap: true, // Enable source maps
-  splitting: false, // No code splitting
-  clean: true, // Clean output directory
-  minify: false, // Don't minify by default
+  entry: ['src/index.ts'],
+  format: ['cjs', 'esm', 'iife'], // CJS, ESM, and UMD
+  outExtension: ({ format }) =>
+    format === 'cjs' ? { js: '.cjs' } : format === 'esm' ? { js: '.mjs' } : { js: '.js' },
+  dts: true, // Generates TypeScript declaration files
+  sourcemap: true,
+  splitting: false,
+  clean: true,
 });
