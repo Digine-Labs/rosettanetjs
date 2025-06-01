@@ -1,5 +1,5 @@
 import { encodeParameters, parseSignature } from './calldata';
-import { Call } from './types';
+import { Call } from '../types';
 
 export function prepareMulticallCalldata(calls: Call[]): string {
   const functionDesc = parseSignature('multicall((uint256,uint256,uint256[])[])');

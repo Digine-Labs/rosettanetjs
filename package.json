@@ -1,6 +1,6 @@
 {
   "name": "rosettanet",
-  "version": "1.2.1",
+  "version": "1.3.1",
   "author": "Digine-Labs",
   "license": "MIT",
   "description": "Javascript library for using Rosettanet",
@@ -36,7 +36,14 @@
     "format": "prettier --write 'src/**/*.{ts,tsx,json,md}'",
     "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@starknet-io/types-js": "^0.7.10",
+    "@wallet-standard/base": "^1.1.0",
+    "@wallet-standard/features": "^1.1.0",
+    "mipd": "^0.0.7",
+    "ox": "^0.7.2",
+    "starknet": "^6.24.1"
+  },
   "keywords": [
     "rosettanet",
     "javascript",
@@ -48,10 +55,9 @@
     "starknetjs"
   ],
   "devDependencies": {
-    "@jest/globals": "^29.7.0",
-    "ts-jest": "^29.2.5",
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
+    "@jest/globals": "^29.7.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/exec": "github:semantic-release/exec",
     "@semantic-release/git": "^10.0.1",
@@ -66,6 +72,7 @@
     "husky": "^9.1.7",
     "prettier": "^3.5.1",
     "semantic-release": "^24.2.3",
+    "ts-jest": "^29.2.5",
     "tsup": "^8.3.6"
   }
 }

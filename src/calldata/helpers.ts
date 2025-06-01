@@ -1,4 +1,4 @@
-import { EncodableArray, EncodableTuple, ParameterDescription } from './types';
+import { EncodableArray, EncodableTuple, ParameterDescription } from '../types';
 
 export function padLeftTo32Bytes(input: Uint8Array): Uint8Array {
   const length = input.length % 32 ? input.length + 32 - (input.length % 32) : input.length;

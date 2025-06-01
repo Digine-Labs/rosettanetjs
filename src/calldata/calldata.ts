@@ -13,7 +13,7 @@ import {
   EncodableTuple,
   EVMFunction,
   ParameterDescription,
-} from './types';
+} from '../types';
 
 export function parseSignature(functionSignature: string): EVMFunction {
   const signatureMatcher = /^([a-zA-Z_][a-zA-Z0-9_]+)\((.*)\)$/;
