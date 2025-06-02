@@ -1,6 +1,6 @@
 {
   "name": "rosettanet",
-  "version": "1.3.1",
+  "version": "1.3.0",
   "author": "Digine-Labs",
   "license": "MIT",
   "description": "Javascript library for using Rosettanet",
