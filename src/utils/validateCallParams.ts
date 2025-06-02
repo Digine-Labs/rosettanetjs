@@ -1,8 +1,4 @@
-interface CallObject {
-  contractAddress: string;
-  entrypoint: string;
-  calldata: string[];
-}
+import { CallObject } from '../types';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const validateCallParams = (value: any): value is CallObject[] => {

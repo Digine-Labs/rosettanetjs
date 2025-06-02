@@ -37,6 +37,12 @@ export interface Call {
   calldata: string[];
 }
 
+export interface CallObject {
+  contractAddress: string;
+  entrypoint: string;
+  calldata: string[];
+}
+
 export interface EthereumProvider {
   //eslint-disable-next-line @typescript-eslint/no-explicit-any
   request(): Promise<any>;
